@@ -1,10 +1,9 @@
 {
-  "name": "cake-app",
+  "name": "cakeapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-		"test": "echo testing",
     "dev:webpack": "webpack -w",
     "dev:nodemon": "nodemon ./server",
     "dev": "concurrently --kill-others \"npm run dev:webpack\" \"npm run dev:nodemon\""
@@ -12,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.2",
     "express": "^4.14.0"
   },
   "devDependencies": {
@@ -21,6 +21,13 @@
     "babel-preset-es2016": "^6.16.0",
     "babel-preset-latest": "^6.16.0",
     "concurrently": "^3.1.0",
+    "jasmine": "^2.5.3",
+    "karma": "^1.4.1",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-webpack": "^2.0.2",
     "webpack": "^1.14.0",
     "webpack-livereload-plugin": "^0.9.0"
   }

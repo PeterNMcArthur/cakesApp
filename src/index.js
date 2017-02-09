@@ -1,1 +1,6 @@
-document.getElementById("app").innerHTML = "<h1/>New app</h1>"
+import * as angular from "angular"
+import MainController from "./list"
+
+angular
+    .module('cakeApp', []) 
+		.controller("MainController", MainController)

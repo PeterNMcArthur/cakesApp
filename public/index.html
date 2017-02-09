@@ -6,7 +6,11 @@
 	<title></title>
 </head>
 <body>
-	<div id="app"></div>
+	<div data-ng-app="cakeApp">
+		<div data-ng-controller="MainController as main">
+			{{ main.title }}
+		</div>
+	</div>
 	<script src="/assets/bundle.js"></script>
 </body>
 </html>

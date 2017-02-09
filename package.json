@@ -1,9 +1,10 @@
 {
-  "name": "html5-webpack",
+  "name": "cake-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+		"test": "echo testing",
     "dev:webpack": "webpack -w",
     "dev:nodemon": "nodemon ./server",
     "dev": "concurrently --kill-others \"npm run dev:webpack\" \"npm run dev:nodemon\""

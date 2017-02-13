@@ -14,6 +14,15 @@ describe('AddCakeController', function() {
       AddCakeController = $controller('AddCakeController', { $scope: $scope })
 			expect(AddCakeController).toBeDefined()
     })
-  })
+		describe("handleForm()", function() {
+			it("return missing feilds", function() {
+				$scope = {}
+				AddCakeController = $controller('AddCakeController', { $scope: $scope })
+				AddCakeController.name = "tom"
+				AddCakeController.handleForm()
+				expect(AddCakeController.emptyFields).toEqual([ 'comment', 'imageUrl', 'yumFactor' ])
+			})
+		})
+	})
 })
 

@@ -34510,6 +34510,10 @@
 		var vm = this;
 		requestCakes.getOne($routeParams.id).then(function (res) {
 			//compose objects together
+			if (res.status !== 200) {
+				$location.path("/");
+				return;
+			}
 			vm = Object.assign(vm, res.data);
 		});
 	}

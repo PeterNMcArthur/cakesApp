@@ -1,0 +1,23 @@
+<div class="grid__container">
+	<div class="cake-page__title">
+		<h1>{{ cake.name }}</h1>
+	</div>
+	<div class="grid__row">
+		<div class="grid__col-6">
+			<div>
+				{{ cake.comment }}
+			</div>
+			<div>
+				<span class="cake-page__rating">rating: </span>
+				{{ cake.yumFactor }}
+
+				{{ cake.yumFactor }}
+				<star-rating rating="cake.yumFactor">
+					</star-rating>
+			</div>
+		</div>
+		<div class="grid__col-6">
+			<img class="image-full" src="." data-ng-src="{{ cake.imageUrl }}" alt="{{ cake.name }}" />
+		</div>
+	</div>
+</div>

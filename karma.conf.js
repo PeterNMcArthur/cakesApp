@@ -4,12 +4,12 @@ webpackConfig.entry = {}
 // Generated on Thu Feb 09 2017 20:13:04 GMT+0000 (GMT)
 
 module.exports = function(config) {
-  config.set({
+	config.set({
 
-    preprocessors: {
+		preprocessors: {
 			'./public/assets/bundle.js': ['webpack'],
-      'test/**/*spec.js': ['babel']
-    },
+			'test/**/*spec.js': ['babel']
+		},
 		// base path that will be used to resolve all patterns (eg. files, exclude)
 		basePath: '',
 
@@ -21,6 +21,8 @@ module.exports = function(config) {
 
 		// list of files / patterns to load in the browser
 		files: [
+			"./node_modules/angular/angular.js",
+			"./node_modules/angular-mocks/angular-mocks.js",
 			'./public/assets/bundle.js',
 			'./test/**/*spec.js'
 		],
@@ -73,12 +75,12 @@ module.exports = function(config) {
 		// how many browser should be started simultaneous
 		concurrency: Infinity,
 
-    webpack: webpackConfig,
+		webpack: webpackConfig,
 		/**
 		 * Turn off verbose logging of webpack compilation.
 		 */
-			webpackMiddleware: {
-				noInfo: true
-			},
+		webpackMiddleware: {
+			noInfo: true
+		},
 	})
 }

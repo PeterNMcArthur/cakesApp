@@ -1,0 +1,10 @@
+<div class="list">
+	<a data-ng-href="/cake?id={{ cake.id }}" class="list-item" data-ng-repeat="cake in list.cakes">
+		<div class="list-item__column-1">
+			<span class="list-item__heading">{{ cake.name }}</span>
+		</div>
+		<div class="list-item__column-2">
+			<img class="list-item__image" src="." data-ng-src="{{ cake.imageUrl }}" alt="{{ cake.name }}" />
+		</div>
+	</a>
+</div>

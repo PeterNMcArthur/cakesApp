@@ -3,13 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<script src="http://127.0.0.1:35729/livereload.js"></script>
-	<title></title>
+	<link rel="stylesheet" href="/assets/style.css">
+	<title>cakes Yum Yum</title>
+	<base href="/">
 </head>
 <body>
-	<div data-ng-app="cakeApp">
-		<div data-ng-controller="MainController as main">
-			{{ main.title }}
-		</div>
+	<div class="container" data-ng-app="cakeApp">
+		<data-ng-include src="'/partials/header/menu.html'"></data-ng-include>
+		<div data-ng-view></div>
 	</div>
 	<script src="/assets/bundle.js"></script>
 </body>

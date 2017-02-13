@@ -5,19 +5,32 @@
 		</div>
 		<form class="grid__row" data-ng-submit="add.handleForm()">
 			<div class="grid__col-6">
-				<label for="name">name</label>
-				<input name="name" data-ng-model="add.name" type="text">
-				<label for="comment">comment</label>
-				<input name="comment" data-ng-model="add.comment" type="text">
+				<div class="grid__row">
+					<div class="grid__col-12 cake-input">
+						<label for="name">name</label>
+						<input name="name" data-ng-model="add.name" type="text">
+					</div>
+					<div class="grid__col-12 cake-input">
+
+						<label for="comment">comment</label>
+						<input name="comment" data-ng-model="add.comment" type="text">
+					</div>
+				</div>
 			</div>
 
 			<div class="grid__col-6">
-				<label for="imageUrl">image URL</label>
-				<input name="imageUrl" data-ng-model="add.imageUrl" type="text">
-				<label for="yumFactor">yum factor</label>
-				<input name="yumFactor" data-ng-model="add.yumFactor" type="number" max="5" min="1">
+				<div class="grid__row">
+					<div class="grid__col-12 cake-input">
+						<label for="imageUrl">image URL</label>
+						<input name="imageUrl" data-ng-model="add.imageUrl" type="text">
+					</div>
+					<div class="grid__col-12 cake-input">
+						<label for="yumFactor">yum factor</label>
+						<input name="yumFactor" data-ng-model="add.yumFactor" type="number" max="5" min="1">
+					</div>
+				</div>
 			</div>
-			<div class="grid__col-12">
+			<div class="grid__col-12 cake-input">
 				<button type="submit" class="">Submit</button>
 			</div>
 		</form>

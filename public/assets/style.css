@@ -81,6 +81,7 @@ body {
 	display: flex;
   flex-direction: row;
 	flex-wrap: wrap;
+	width: 100%;
   justify-content: flex-start;
 }
 
@@ -106,4 +107,9 @@ body {
 	.grid__col-6 {
 		width: 100%;
 	}
+}
+
+.cake-input {
+	padding: 0 1rem 1rem 1rem;
+	box-sizing:border-box;
 }
